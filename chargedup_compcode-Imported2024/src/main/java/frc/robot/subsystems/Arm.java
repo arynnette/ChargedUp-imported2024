@@ -39,7 +39,7 @@ public class Arm extends SubsystemBase {
         mShoulderMotorMain = new CANSparkMax(Constants.Arm.kShoulderMain, MotorType.kBrushless);
         mShoulderFollower = new CANSparkMax(Constants.Arm.kShoulderFollow, MotorType.kBrushless);
         mShoulderEncoder = new DutyCycleEncoder(Constants.Arm.kShoulderEncoderChannel);
-        mShoulderMotorMain.setIdleMode(IdleMode.kBrake);
+        mShoulderMotorMain.setIdleMode(IdleMode.kBrake); // testing
         mShoulderFollower.setIdleMode(IdleMode.kBrake);
 
         mShoulderMotorMain.enableVoltageCompensation(10);

@@ -10,6 +10,8 @@ import edu.wpi.first.math.trajectory.TrapezoidProfile;
 import edu.wpi.first.math.util.Units;
 import frc.lib.util.COTSFalconSwerveConstants;
 import frc.lib.util.SwerveModuleConstants;
+import com.ctre.phoenix6.configs.OpenLoopRampsConfigs;
+import com.ctre.phoenix6.configs.ClosedLoopRampsConfigs;    
 
 public final class Constants {
     public static final double stickDeadband = 0.1;
@@ -114,6 +116,8 @@ public final class Constants {
          * We found a small open loop ramp (0.25) helps with tread wear, tipping, etc */
         public static final double openLoopRamp = 0.25;
         public static final double closedLoopRamp = 0.0;
+        public static final OpenLoopRampsConfigs openLoopR = new OpenLoopRampsConfigs();
+        public static final OpenLoopRampsConfigs closedLoopR = new OpenLoopRampsConfigs();
 
         /* Angle Motor PID Values */
         public static final double angleKP = chosenModule.angleKP;

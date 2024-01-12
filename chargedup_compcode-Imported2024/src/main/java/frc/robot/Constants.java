@@ -116,8 +116,8 @@ public final class Constants {
          * We found a small open loop ramp (0.25) helps with tread wear, tipping, etc */
         public static final double openLoopRamp = 0.25;
         public static final double closedLoopRamp = 0.0;
-        public static final OpenLoopRampsConfigs openLoopR = new OpenLoopRampsConfigs();
-        public static final OpenLoopRampsConfigs closedLoopR = new OpenLoopRampsConfigs();
+        public static final OpenLoopRampsConfigs kOpenLoopR = new OpenLoopRampsConfigs();
+        public static final ClosedLoopRampsConfigs kClosedLoopR = new ClosedLoopRampsConfigs();
 
         /* Angle Motor PID Values */
         public static final double angleKP = chosenModule.angleKP;
